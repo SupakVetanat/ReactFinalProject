@@ -8,6 +8,7 @@ import  Switch  from "@material-ui/core/switch";
 import  IconButton  from "@material-ui/core";
 import  Brightness4Icon from "@material-ui/icons/Brightness4";
 import {useState,useEffect} from 'react'
+import ResumePage from "./Pages/ResumePage";
 
 function App() {
   const [theme,setTheme] = useState('dark-theme')
@@ -49,6 +50,7 @@ function App() {
           <switching>
             <Route path="/" exact><HomePage/></Route>
             <Route path="/about" ><AboutPage/></Route>
+            <Route path="/resume" ><ResumePage/></Route>
           </switching>
       </MainContentStyled>
     </div>
