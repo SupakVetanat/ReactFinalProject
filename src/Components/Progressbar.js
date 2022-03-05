@@ -1,27 +1,25 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-function ProgressBar({title, width, text}) {
-    return (
-        <ProgressBarStyled>
-            <h6>{title}</h6>
-            <div className="progress-bar">
-                <p>{text}</p>
-                <div className="progress">
-                    <span style={{width: width}}></span>
-                </div>
-            </div>
-        </ProgressBarStyled>
-    )
+function ProgressBar({ title, width, text }) {
+  return (
+    <ProgressBarStyled>
+      <h6><span>{text}</span> {title} </h6>
+        
+      <div className="progress-bar">
+        <div className="progress">
+          <span style={{ width: width }}></span>
+        </div>
+      </div>
+    </ProgressBarStyled>
+  );
 }
 
 const ProgressBarStyled = styled.div`
     .progress-bar{
         display: flex;
-        align-items: center;
-        p{
-            padding-right: 1.1rem;
-        }
+        align-items: center;1rem;
+        
         .progress{
             position: relative;
             width: 100%;

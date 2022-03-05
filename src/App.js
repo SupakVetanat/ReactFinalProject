@@ -51,6 +51,7 @@ function App() {
             <Route path="/" exact><HomePage/></Route>
             <Route path="/about" ><AboutPage/></Route>
             <Route path="/resume" ><ResumePage/></Route>
+            <Route path="/contact" ></Route>
           </switching>
       </MainContentStyled>
     </div>

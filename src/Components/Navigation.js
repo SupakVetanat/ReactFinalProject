@@ -63,6 +63,8 @@ const NavigationStyled = styled.nav`
                 display: block;
                 padding: .2rem 0;
                 position: relative;
+                text-decoration: none;
+                font-size: 1.5rem;
                 &:hover{
                     cursor: pointer;
                 }
@@ -76,7 +78,7 @@ const NavigationStyled = styled.nav`
                     background-color: var(--primary-color);
                     z-index: 3;
                     opacity: 0.21;
-                    transition: ALL 0.4s cubic-bezier(.33,.78,.85,.47);
+                    transition: width 0.4s cubic-bezier(.37,0,.68,1)
                 }
             }
 

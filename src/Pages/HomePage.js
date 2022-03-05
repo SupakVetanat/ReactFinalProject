@@ -14,7 +14,7 @@ const HomePage = () => {
                 Ipsum has been the industry's standard dummy 
                 text ever since</p>
             <div className='icons'>
-                <div className='icon i-facebook'><FacebookIcon/></div>
+                <div className='icon i-facebook'><FacebookIcon /></div>
                 <div className='icon i-github'><GitHubIcon/></div>
                 <div className='icon i-youtube'><YoutubeIcon/></div>
             </div>
