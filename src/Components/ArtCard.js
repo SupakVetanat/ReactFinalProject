@@ -3,10 +3,12 @@ import {Card,CardDeck} from 'react-bootstrap';
 import FBpage from '../img/FBpage.jpg'
 import Tiktok from '../img/Tiktok.jpeg'
 import Twitter from '../img/Twitter.jpg'
+import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ArtCard = () => {
   return (
+    <ArtCardStyled>
     <CardDeck>
     <a href='https://www.facebook.com/kapus.art/'>
       <Card>
@@ -30,8 +32,14 @@ const ArtCard = () => {
       </Card.Body>
     </Card></a>
   </CardDeck>
+  </ArtCardStyled>
    
   )
 }
+const ArtCardStyled = styled.div`
+.card{
+  background-color: var(--background-dark-grey);
+}
+`
 
 export default ArtCard

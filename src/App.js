@@ -9,6 +9,15 @@ import  IconButton  from "@material-ui/core";
 import  Brightness4Icon from "@material-ui/icons/Brightness4";
 import {useState,useEffect} from 'react'
 import ResumePage from "./Pages/ResumePage";
+import ProductPage from "./Pages/ProductPage";
+import DetailPage from "./Pages/DetailPage";
+
+// redux setup
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from "./redux/reducers/index";
+import CartPage from "./Pages/CartPage";
+const store = createStore(rootReducer)
 
 function App() {
   const [theme,setTheme] = useState('dark-theme')
@@ -28,6 +37,7 @@ function App() {
   },[theme])
 
   return (
+    <Provider store={store}>
     <div className="App">
       <Sidebar/>
       <MainContentStyled className="main-content">
@@ -51,10 +61,15 @@ function App() {
             <Route path="/" exact><HomePage/></Route>
             <Route path="/about" ><AboutPage/></Route>
             <Route path="/resume" ><ResumePage/></Route>
+            <Route path="/product" ><ProductPage/></Route>
+            <Route path="/detail/:id/title/:title">
+              <DetailPage/> </Route>
+            <Route path="/cart"><CartPage/></Route>
             <Route path="/contact" ></Route>
           </switching>
       </MainContentStyled>
     </div>
+    </Provider>
   );
 }
 const MainContentStyled = styled.main`
