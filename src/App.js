@@ -17,6 +17,7 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import rootReducer from "./redux/reducers/index";
 import CartPage from "./Pages/CartPage";
+import ContactPage from "./Pages/ContactPage";
 const store = createStore(rootReducer)
 
 function App() {
@@ -65,7 +66,7 @@ function App() {
             <Route path="/detail/:id/title/:title">
               <DetailPage/> </Route>
             <Route path="/cart"><CartPage/></Route>
-            <Route path="/contact" ></Route>
+            <Route path="/contact" ><ContactPage/></Route>
           </switching>
       </MainContentStyled>
     </div>
