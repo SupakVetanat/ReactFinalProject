@@ -15,7 +15,7 @@ function ContactItem ({title,detail, logo}) {
   )
 }
 const ContactItemStyled = styled.div`
-background-color: var(--background-dark-grey);
+background-color: var(--sidebar-dark-color);
 display: flex;
 padding: 2rem;
 margin: auto;

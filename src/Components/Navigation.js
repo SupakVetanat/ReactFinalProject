@@ -75,6 +75,7 @@ const NavigationStyled = styled.nav`
                 font-size: 1.5rem;
                 &:hover{
                     cursor: pointer;
+                    color: var(--white-color);
                 }
                 &::before{
                     content: "";

@@ -47,15 +47,15 @@ const Cart = () => {
 }
 const CartStyled = styled.div`
 Table{
-    tr:nth-child(even) {background-color: var(--background-dark-grey);}
+    tr:nth-child(even) {background-color: var(--sidebar-dark-color);}
     tr:nth-child(odd) {background-color: var(--background-dark-color);}
     color: var(--font-light-color);
-    tr:hover td {background-color: var(--primary-color);}
+    tr:hover td {background-color: var(--primary-color-light);}
     .icon{
         width: 215px;
     }
     th{
-        background-color: var(--background-dark-grey);
+        background-color: var(--sidebar-dark-color);
     }
     th, td {
         border-color: var(--border-color);

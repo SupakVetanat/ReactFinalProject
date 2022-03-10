@@ -23,10 +23,16 @@ function Resume() {
                         text={'การศึกษาระดับปริญญาตรีที่สถาบันเทคโนโลยีไทย-ญี่ปุ่น คณะเทคโนโลยีสารสนเทศ สาขาวิชาเทคโนโลยีมัลติมิเดีย (MT)'} 
                     />
                 <ResumeItem 
-                        year={'2016-2018'} 
-                        title={'High School Graduation'}
+                        year={'2016 - 2018'} 
+                        title={'Senior High School Graduation'}
                         subTitle={'Satreesethabudbumpen School'}
-                        text={'จบการศึกษาระดับมัธยมปลายจากโรงเรียนสตรีเศรษฐบุตรบําเพ็ญ สายศิลป์-ภาษาญี่ปุ่น'} 
+                        text={'จบการศึกษาระดับมัธยมศึกษาตอนปลายจากโรงเรียนสตรีเศรษฐบุตรบําเพ็ญ สายศิลป์-ภาษาญี่ปุ่น'} 
+                />
+                <ResumeItem 
+                        year={'2013 - 2015'} 
+                        title={'Junior High School Graduation'}
+                        subTitle={'Nawaminthrachinuthit Triamudomsuksanomklao School'}
+                        text={'จบการศึกษาระดับมัธยมศึกษาตอนต้นจากโรงเรียนนวมินทราชินูทิศ เตรียมอุดมศึกษาน้อมเกล้า สายศิลป์-ภาษาญี่ปุ่น'} 
                 />
                 </div>
                 

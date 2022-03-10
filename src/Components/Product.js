@@ -41,7 +41,7 @@ const Product = () => {
     if(loading === true){
         return(
             <div className="text-center mt-5">
-                <Spinner animation="border" variant="warning" />
+                <Spinner animation="border" variant="danger" />
             </div>
             
         )
@@ -89,14 +89,14 @@ const Product = () => {
                                 <td>{p.title}</td>
                                 <td>{p.detail}</td>
                                 <td>{p.date}</td>
-                                <td><Badge variant="success">{p.view}</Badge>{' '}</td>
+                                <td><Badge variant="info">{p.view}</Badge>{' '}</td>
                                 <td><Image src={p.picture} rounded width={50}/></td>
                                 
                                 <td className="icon">
                                     <Link to={`/detail/${p.id}/title/${p.title}`}>
-                                    <Button  variant="primary">Click <MouseIcon color='white'/></Button>
+                                    <Button variant="danger"  >Click <MouseIcon/></Button>
                                     </Link>
-                                    <Button variant="warning" className="ml-1" onClick={() => addCart(p)} >Buy</Button>
+                                    <Button variant="danger"    className="ml-1" onClick={() => addCart(p)} >Buy</Button>
                                     
                                     </td>
                             </tr>
@@ -113,15 +113,15 @@ const Product = () => {
 
 const ProductStyled = styled.div`
 Table{
-    tr:nth-child(even) {background-color: var(--background-dark-grey);}
+    tr:nth-child(even) {background-color: var(--sidebar-dark-color);}
     tr:nth-child(odd) {background-color: var(--background-dark-color);}
     color: var(--font-light-color);
-    tr:hover td {background-color: var(--primary-color);}
+    tr:hover td {background-color: var(--primary-color-light);}
     .icon{
         width: 215px;
     }
     th{
-        background-color: var(--background-dark-grey);
+        background-color: var(--sidebar-dark-color);
     }
     th, td {
         border-color: var(--border-color);

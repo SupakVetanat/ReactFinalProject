@@ -21,40 +21,40 @@ const GlobalStyled = createGlobalStyle`
 
 // }
 .light-theme{
-    --primary-color: #007bff;
-    --primary-color-light: #057FFF;
-    --secondary-color: #ff7675;
-    --background-dark-color: #F1F1F1;
-    --background-dark-grey: #e4e4e4;
-    --border-color: #cbced8;
-    --background-light-color: #F1F1F1;
-    --background-light-color-2: rgba(3,127,255,.3);
-    --white-color: #151515;
-    --font-light-color: #313131;
-    --font-dark-color: #313131;
-    --font-dark-color-2: #151515;
-    --sidebar-dark-color: #E4E4E4;
-    --scrollbar-bg-color: #383838;
+    --primary-color: #E63946;
+    --primary-color-light: #EC9A9A;
+    --secondary-color: #ECDEDC;
+    --background-dark-color: #D4EDE8;
+    --background-dark-grey: #7FB5C8;
+    --border-color: #7FB5C8;
+    --background-light-color: #D4EDE8;
+    --background-light-color-2: rgba(230,57,70,.3);
+    --white-color: #13212A;
+    --font-light-color: #1F3747;
+    --font-dark-color: #1F3747;
+    --font-dark-color-2: #13212A;
+    --sidebar-dark-color: #A8DADC;
+    --scrollbar-bg-color: #7FB5C8;
     --scrollbar-thump-color: #6b6b6b;
-    --scrollbar-track-color: #383838;
+    --scrollbar-track-color: #7FB5C8;
 }
 .dark-theme{
-    --primary-color: #007bff;
-    --primary-color-light: #057FFF;
-    --secondary-color: #6c757d;
-    --background-dark-color: #10121A;
-    --background-dark-grey: #191D2B;
-    --border-color: #2e344e;
+    --primary-color: #E63946;
+    --primary-color-light: #EC9A9A;
+    --secondary-color: #3E2D2B;
+    --background-dark-color: #283A53;
+    --background-dark-grey: #191D32;
+    --border-color: #467494;
     --background-light-color: #F1F1F1;
-    --background-light-color-2: rgba(3,127,255,.3);
+    --background-light-color-2: rgba(230,57,70,.3);
     --white-color: #FFF;
-    --font-light-color: #a4acc4;
-    --font-dark-color: #313131;
-    --font-dark-color-2: #151515;
-    --sidebar-dark-color: #191D2B;
-    --scrollbar-bg-color: #383838;
+    --font-light-color: #D4EDE8;
+    --font-dark-color: #1F3747;
+    --font-dark-color-2: #13212A;
+    --sidebar-dark-color: #375773;
+    --scrollbar-bg-color: #5590B4;
     --scrollbar-thump-color: #6b6b6b;
-    --scrollbar-track-color: #383838;
+    --scrollbar-track-color: #5590B4;
 }
 
 *{
